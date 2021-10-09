@@ -73,10 +73,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tslib/password-typo-case.git"
+    "url": "git+https://github.com/beenotung/password-typo-case.git"
   },
   "bugs": {
-    "url": "https://github.com/tslib/password-typo-case/issues"
+    "url": "https://github.com/beenotung/password-typo-case/issues"
   },
-  "homepage": "https://github.com/tslib/password-typo-case#readme"
+  "homepage": "https://github.com/beenotung/password-typo-case#readme"
 }
