@@ -1,6 +1,6 @@
 {
   "name": "password-typo-case",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Expand the given password into a list of possible switched-case password",
   "keywords": [
     "password",
