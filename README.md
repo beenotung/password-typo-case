@@ -1,8 +1,31 @@
 # password-typo-case
 
-Expand the given password into a list of possible switched-case password
+Expand the given password into a list of possible switched-case password.
 
 [![npm Package Version](https://img.shields.io/npm/v/password-typo-case.svg?maxAge=3600)](https://www.npmjs.com/package/password-typo-case)
+
+This package aim to provider better UX during password-based authentication when the user's device auto switch the cases of password input.
+
+## Usage Example
+
+```typescript
+import { expandPasswordList } from 'password-typo-case'
+
+let username = document.querySelector('#username').value
+let password = document.querySelector('#password').value // e.g. 'test'
+let passwordList = expandPasswordList(password) // e.g. [ 'test', 'TEST', 'Test', 'tEST' ]
+let passwordHashList = passwordList.map(hashPassword) // e.g. using bcrypt
+fetch('/login', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    username,
+    passwordHashList,
+  }),
+})
+```
 
 ## Typescript Signature
 
